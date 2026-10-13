@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hallpilot.net/sitemap.xml
