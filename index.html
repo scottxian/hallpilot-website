@@ -17,19 +17,20 @@
   <meta property="og:title" content="Hall Pilot" />
   <meta property="og:description" content="A smarter digital hall pass system for schools." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://hallpilot.net/assets/og-image.png" />
+  <meta property="og:image" content="https://hallpilot.net/android-chrome-512x512.png" />
   <meta property="og:url" content="https://hallpilot.net/" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Hall Pilot" />
   <meta name="twitter:description" content="A smarter digital hall pass system for schools." />
-  <meta name="twitter:image" content="https://hallpilot.net/assets/og-image.png" />
+  <meta name="twitter:image" content="https://hallpilot.net/android-chrome-512x512.png" />
 
   <link rel="canonical" href="https://hallpilot.net/" />
   <meta name="msapplication-config" content="browserconfig.xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to main content</a>
   <div class="page-shell">
     <header class="site-header">
       <div class="container nav-wrap">
@@ -40,9 +41,20 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
-          <a href="#why-schools">Why schools choose it</a>
-          <a href="https://app.hallpilot.net/" class="nav-cta">Access app</a>
+          <a href="#why-schools">Why Hall Pilot</a>
+          <a href="#contact">Contact</a>
+          <a href="#access" class="nav-cta">School access</a>
         </nav>
+        <details class="mobile-nav">
+          <summary>Menu <span aria-hidden="true">☰</span></summary>
+          <nav aria-label="Mobile navigation">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#why-schools">Why Hall Pilot</a>
+            <a href="#access">School access</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </details>
       </div>
     </header>
 
@@ -57,7 +69,7 @@
               and gives administrators the visibility they need across rooms and campuses.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://app.hallpilot.net/">Access Hall Pilot</a>
+              <a class="button button-primary" href="mailto:info@hallpilot.net?subject=Hall%20Pilot%20Demo%20Request">Request a demo</a>
               <a class="button button-secondary" href="#features">Explore features</a>
             </div>
             <ul class="hero-points" aria-label="Key product benefits">
@@ -183,18 +195,45 @@
         </div>
       </section>
 
-      <section class="section cta-section">
+      <section id="access" class="section cta-section">
         <div class="container cta-card">
           <div>
-            <p class="eyebrow">Ready to launch?</p>
-            <h2>Access the app or start building your rollout.</h2>
-            <p>
-              Already use Hall Pilot? Use the link provided by your school to open the correct classroom or campus. The application is hosted separately at app.hallpilot.net.
-            </p>
+            <p class="eyebrow">Already using Hall Pilot?</p>
+            <h2>Use your school's Hall Pilot link.</h2>
+            <p>Your school's student, teacher, and administrator links include the correct school or room information. Open the link your school provided and bookmark it for next time.</p>
           </div>
           <div class="cta-actions">
-            <a class="button button-primary" href="https://app.hallpilot.net/">Open the app</a>
-            <a class="button button-secondary" href="#features">Explore features</a>
+            <a class="button button-primary" href="mailto:support@hallpilot.net?subject=Help%20with%20my%20Hall%20Pilot%20link">Help with access</a>
+            <a class="button button-secondary" href="#contact">Contact Hall Pilot</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's talk about Hall Pilot.</h2>
+            <p>Interested in bringing Hall Pilot to your school, or need help with an existing setup? Email us directly.</p>
+          </div>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:info@hallpilot.net?subject=Hall%20Pilot%20Demo%20Request">
+              <span class="contact-category">Schools and demos</span>
+              <strong>info@hallpilot.net</strong>
+              <span>Ask a question or request an introduction to Hall Pilot.</span>
+              <span class="contact-action">Send an email →</span>
+            </a>
+            <a class="contact-card" href="mailto:support@hallpilot.net?subject=Hall%20Pilot%20Support">
+              <span class="contact-category">Technical support</span>
+              <strong>support@hallpilot.net</strong>
+              <span>Get help with your school's Hall Pilot installation or access link.</span>
+              <span class="contact-action">Contact support →</span>
+            </a>
+            <a class="contact-card" href="mailto:customerservice@hallpilot.net?subject=Hall%20Pilot%20Customer%20Service">
+              <span class="contact-category">Customer service</span>
+              <strong>customerservice@hallpilot.net</strong>
+              <span>General customer service and account-related inquiries.</span>
+              <span class="contact-action">Contact customer service →</span>
+            </a>
           </div>
         </div>
       </section>
@@ -207,12 +246,17 @@
           <p>A modern digital hall pass system for schools.</p>
         </div>
         <div class="footer-links">
-          <a href="https://app.hallpilot.net/">App</a>
+          <a href="#access">School access</a>
           <a href="#features">Features</a>
-          <a href="#how-it-works">How it works</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll(".mobile-nav a").forEach(link => {
+      link.addEventListener("click", () => { document.querySelector(".mobile-nav").open = false; });
+    });
+  </script>
 </body>
 </html>
