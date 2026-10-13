@@ -37,3 +37,31 @@ The website includes a simplified SVG adaptation of the approved paper-airplane 
 SECURITY
 --------
 The public marketing repository must never include student roster information, PINs, service-role keys, or secret credentials.
+
+
+--------------------------------------------------
+Website update — October 13, 2026
+Type: UI, Navigation, Contact and App Access
+
+Changes:
+- Replaced non-scoped "Open app" links with school-link instructions.
+- Added demo inquiries via info@hallpilot.net.
+- Added support@hallpilot.net and customerservice@hallpilot.net contact links.
+- Added a small-screen navigation menu and keyboard skip link.
+- Corrected social preview image URLs to a file in this repository.
+- Preserved existing website logo and favicon files.
+
+Files changed:
+- index.html
+- styles.css
+- README.txt
+
+Testing:
+- HTML anchor IDs and navigation references verified.
+- All local asset references found in the repository.
+- CSS brace balance and responsive menu rules checked.
+- No root-only application links remain.
+- Live browser and mail-client behavior still requires verification.
+
+Application impact:
+- No changes to app.hallpilot.net, Supabase, or the Hall Pass code.
